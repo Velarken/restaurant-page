@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'Sancreek';
-    src: url('Sancreek-Regular.woff2') format('woff2'),
-        url('Sancreek-Regular.woff') format('woff');
+    src: url('./fonts/Sancreek-Regular.woff') format('woff2'),
+        url('./fonts/Sancreek-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -9,6 +9,7 @@
 :root {
     --crimson:rgb(99, 0, 0);
     --darkCrimson:rgb(68, 0, 0);
+    --slate:rgb(15, 15, 15);
 }
 body {
     display:flex;
@@ -42,7 +43,6 @@ button:hover {
 div#content {
     width:100vw;
     height:50vh;
-    background-color: rgb(37, 37, 37);
     align-items: center;
 }
 .welcome {
@@ -77,8 +77,12 @@ div#content {
     bottom:0;
 }
 .main-content {
+    display:flex;
     align-items: center;
     justify-content: center;
+    background-color: var(--slate);
+    width:100vw;
+    height:70vh;
 }
 #mainPhoto {
     position:absolute;

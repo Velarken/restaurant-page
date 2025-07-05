@@ -1,7 +1,8 @@
-import deanImg from "./dean-welcome.png";
-import welcomeBannerLeft from "./welcome-banner-1.png";
-import welcomeBannerRight from "./welcome-banner-2.png";
-import restaurantPhoto from "./restaurant.jpg";
+// image imports
+import deanImg from "./imgs/dean-welcome.png";
+import welcomeBannerLeft from "./imgs/welcome-banner-1.png";
+import welcomeBannerRight from "./imgs/welcome-banner-2.png";
+import restaurantPhoto from "./imgs/restaurant.jpg";
 
 // renders content for the home page
 export function renderHomePage() {
@@ -28,7 +29,7 @@ export function renderHomePage() {
     // add generated content to the DOM
     content.append(lowerContainer);
     lowerContainer.appendChild(restuarantMain);
-    
+
     content.appendChild(welcomeTextLeft)
     content.appendChild(welcomeDean);
     content.appendChild(welcomeTextRight);
