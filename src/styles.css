@@ -60,6 +60,7 @@ div#content {
     top:50px;
     left:30%;
     bottom:0;
+    border:2px solid red;
 }
 #welcomeLeft {
     width:40%;
@@ -68,6 +69,7 @@ div#content {
     top:70px;
     left:-10px;
     bottom:0;
+    border:2px solid green;
 }
 #welcomeRight {
     width:40%;
@@ -76,6 +78,7 @@ div#content {
     top:70px;
     right:-10px;
     bottom:0;
+    border:2px solid green;
 }
 .main-content {
     display:flex;
@@ -87,17 +90,26 @@ div#content {
 }
 #mainPhoto {
     position:absolute;
-    top:450px;
+    top:500px;
     left:0;
     right:0;
     width:100%;
+
 }
 #testimonial {
     background-color: var(--slate);
     width:60vw;
     height:15vh;
     z-index: "9999";
-    border:3px solid green;
+    position:absolute;
+    top:700px;
+    text-align: center;
+    color:white;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    padding:20px;
+    border:2px outset white;
 }
 .menu-container {
     display:flex;
@@ -118,6 +130,7 @@ div#content {
     align-items: center;
     width:70vw;
     height:150px;
+    border:3px inset gold;
 }
 .item-info {
     display:flex;
@@ -126,10 +139,8 @@ div#content {
     min-width:40vw;
     height:150px;
     justify-content: center;
-    border:3px inset gold;
     align-items: center;
     margin:10px;
-    background-color:rgb(209, 209, 209);
 }
 .item-name {
     flex:1;
@@ -138,11 +149,12 @@ div#content {
     align-items: center;
     justify-content: start;
     padding-top:10px;
+    color:rgb(231, 211, 211)
 }
 .item-desc {
     flex:3;
     padding:10px;
-    color:var(--slate)
+    color:rgb(190, 164, 164)
 }
 .item-price {
     display:flex;
@@ -152,7 +164,7 @@ div#content {
     text-align: center;
     align-items: center;
     justify-content: center;
-    color:white;
+    color:rgb(231, 211, 211)
 }
 .placeholder-item {
     height:150px;
