@@ -1,3 +1,4 @@
+import './menu.css'
 // photo imports
 import coeds from './imgs/sweeden_ya.png';
 import service from './imgs/service.png'
