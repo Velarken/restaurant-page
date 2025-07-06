@@ -1,46 +1,52 @@
-import placeholder from './imgs/placeholder.png';
+// photo imports
 import coeds from './imgs/sweeden_ya.png';
 import service from './imgs/service.png'
+import fish from './imgs/fish.png';
+import meatballs from './imgs/meatballs.png';
+import dip from './imgs/dip.png';
+import endive from './imgs/endive.png';
+import peas from './imgs/peas.png';
+import sundae from './imgs/sundae.png';
 
 const menu = [
     {
         name:"Hector the Well Endive'd",
-        desc:'',
-        image: placeholder,
+        desc:'Roasted Belgian endives covered in a melody of veggies and covered in a savory sauce.',
+        image: endive,
         price:'$69.99'
     },
     {
         name:'Fist Full of Meatballs',
         desc:'A sharable plate of spaghetti with hand crafted artisinal paintba--MEAT BALLS...Enjoy a taste of a good ole spaghetti western!',
-        image: placeholder,
+        image: meatballs,
         price:'$100'
     },
     {
         name:'7 Layer Human Bean-ing Dip',
         desc:'A savory and spicy layered dip made by the sweaty person in the white morph suit we all know and love. He gets paid 0.001% of each dip we sell.',
-        image: placeholder,
+        image: dip,
         price:'$12.99'
     },
     {
         name:'CoEd Oil Wrestling Sundae',
         desc:'A hearty double scoop of vanilla ice cream slathered in a heavy coating of chocolate sauce and your choice of toppings. All proceeds go to saving the pelwicans, I wuv dem uwu.',
-        image: placeholder,
+        image: sundae,
         price:'$800.85'
     },
     {
         name:'Market Price Fish',
         desc:'The perfect meal to close out a birthday where you got a REAL conversation with your idol...Not what you thought it would be huh? Oh well, we got this fish from space or whatever.',
-        image: placeholder,
+        image: fish,
         price:'1 solid gold bar'
     },
     {
         name:'Intro to Anthropolo-pea Soup',
         desc:'Created using only the tools found in our boxes, this split-pea soup goes perfectly with an order of our complimentary garlic spear heads. Side of your own urine not included',
-        image: placeholder,
+        image: peas,
         price:'$24.99'
     }
-]
-    export function renderMenuPage() {
+];
+export function renderMenuPage() {
     const content = document.querySelector('.content');
     content.id = 'menuContent'
     const contentContainer = document.getElementById('menuContent')
@@ -98,23 +104,4 @@ const menu = [
         menuItemContainer.appendChild(itemPrice);
         
     }
-
-    
-    // page head
-        // menu pun + photo of annie and britta
-    // menu container
-        // menu item container 
-            // item image (left)
-            // item description (middle)
-            // item price (right)
-        // menu item container 
-            // item image (left)
-            // item description (middle)
-            // item price (right)
-        // menu item container 
-            // item image (left)
-            // item description (middle)
-            // item price (right)
-    
-    // optionally add image inspect that shows a larger photo of each meal
-}
+};
